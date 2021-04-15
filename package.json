@@ -1,0 +1,28 @@
+{
+  "name": "shopify-data-import",
+  "version": "0.1.0",
+  "description": "Import data into a Shopify store",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "serve": "node src/app.js",
+    "watch": "nodemon -w src --exec npm run serve",
+    "lint": "eslint src",
+    "fix": "eslint src --fix",
+    "precommit": "npm run lint",
+    "prepare": "husky install",
+    "test": ""
+  },
+  "author": "Sam England <samuel.england1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
